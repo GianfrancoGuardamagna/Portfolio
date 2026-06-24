@@ -107,7 +107,7 @@ export const content = {
         status: { en: '3 CLIENTS', es: '3 CLIENTES' },
         blink: false,
         link: null,
-        sprite: null,
+        sprite: 'star',
       },
     ],
   },

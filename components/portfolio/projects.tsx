@@ -2,7 +2,7 @@
 
 import { ExternalLink } from 'lucide-react'
 import { content, type Lang } from '@/lib/content'
-import { AlienSprite, ShipSprite } from './sprites'
+import { AlienSprite, ShipSprite, StarCluster } from './sprites'
 
 export function Projects({ lang }: { lang: Lang }) {
   const t = content.projects
@@ -31,6 +31,9 @@ export function Projects({ lang }: { lang: Lang }) {
             )}
             {p.sprite === 'alien' && (
               <AlienSprite className="drift absolute right-3 top-3 h-7 w-7 opacity-70" />
+            )}
+            {p.sprite === 'star' && (
+              <StarCluster className="drift absolute right-3 top-3 h-7 w-7 opacity-70" />
             )}
 
             <h3 className="font-display text-xs leading-relaxed text-green">
